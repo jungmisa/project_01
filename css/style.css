@@ -26,7 +26,8 @@
     width: 500px;
     height: 500px;
     margin: 5px;
-    border: 1px solid var(--text2);
+    /* border: 1px solid var(--text2); */
+    border-radius: 10px;
 }
 
 /* WEAT, SUGAR& MORE */
@@ -130,17 +131,31 @@ button .btn-secondary {
 }
 
 .insta-content:nth-child(1) {
-    background: url(../img/insta_1.jpg) no-repeat center
+    background: url(../img/ins_1.png) no-repeat center;
+    background-size: contain;
 }
 
 .insta-content:nth-child(2) {
-    background: url(../img/insta_2.jpg) no-repeat center
+    background: url(../img/ins_2.png) no-repeat center;
+    background-size: contain;
 }
 
 .insta-content:nth-child(3) {
-    background: url(../img/insta_3.jpg) no-repeat center
+    background: url(../img/ins_3.png) no-repeat center;
+    background-size: contain;
 }
-
+.insta-content:nth-child(4) {
+    background: url(../img/ins_4.png) no-repeat center;
+    background-size: contain;
+}
+.insta-content:nth-child(5) {
+    background: url(../img/ins_5.png) no-repeat center;
+    background-size: contain;
+}
+.insta-content:nth-child(6) {
+    background: url(../img/ins_6.png) no-repeat center;
+    background-size: contain;
+}
 .fr-box {
     width: 1400px;
     display: flex;
