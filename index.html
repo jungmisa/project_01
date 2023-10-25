@@ -36,8 +36,9 @@
         </header>
         <main>
             <section>
+                <!-- 슬라이드 채우기 -->
                 <div class="container-fluid ps-0" style="overflow: hidden;">
-                    <div id="carousel" class="carousel slide carousel-fade" style="height: 100vh; width: 100vw;"
+                    <div id="carousel" class="carousel slide carousel-fade mx-auto" style="width: 100%; height: 100%;"
                         data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
@@ -47,17 +48,16 @@
                         </div>
                         <div class="carousel-inner">
                             <!-- data-bs-interval="500: 속도조정 -->
-                            <div class="carousel-item active" data-bs-interval="500"><img
-                                    src="https://placedog.net/640/480?id=1" class="d-block w-100" alt=""></div>
-                            <div class="carousel-caption d-none d-md-block bottom-50">
+                            <div class="carousel-item active" data-bs-interval="500"><img src="./img/bannerex_01.png" class="d-block w-100" alt=""></div>
+                            <div class="carousel-caption bottom-50">
                             </div>
-                            <div class="carousel-item" data-bs-interval="500"><img
-                                    src="https://placedog.net/640/480?id=2" class="d-block w-100" alt="">
+                            <div class="carousel-item" data-bs-interval="500"><img src="./img/stuffed_bagel.png"
+                                    class="d-block w-100" alt="">
                                 <div class="carousel-caption d-none d-md-block bottom-50">
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="500"><img
-                                    src="https://placedog.net/640/480?id=3" class="d-block w-100" alt="">
+                            <div class="carousel-item" data-bs-interval="500"><img src="./img/season_bagel.png"
+                                    class="d-block w-100" alt="">
                                 <div class="carousel-caption d-none d-md-block bottom-50">
                                 </div>
                             </div>
@@ -132,7 +132,8 @@
                             <p>훕훕베이글을 빵의 가장 기본을 생각합니다.</p>
                             <p>유기농밀가루, 유기농설탕 그리고 정제소금</p>
                             <p>깨끗한 원재료가 우리를 건강하게 합니다.</p>
-                            <button type="button" class="btn btn-secondary"><a href="#" class="p2">READ MORE</a></button>
+                            <button type="button" class="btn btn-secondary"><a href="#" class="p2">READ
+                                    MORE</a></button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +175,7 @@
             <!-- 인스타 레이아웃 -->
             <section>
                 <h2 class="title-font">instagram
-                    <strong class="cursor-h2ointer"><a href="#">></a></strong>
+                    <strong class="cursor-pointer"><a href="#">></a></strong>
                 </h2>
                 <div class="instagram-box">
                     <div class="insta-content box-container">
@@ -218,7 +219,28 @@
                     </div>
                 </div>
                 <div class="fr-content box-container">
+                    <div class="tell-us">
+                        <h1>TELL <span>US</span></h1>
+                    </div>
+                    <!-- 인풋태그 -->
                     <div class="adress-box">
+                        <div class="text-input">
+                            <form action="#" method="post" class="form">
+                                <div class="input-1">
+                                    <input type="text" placeholder="이름">
+                                </div>
+                                <div class="input-2">
+                                    <input type="text" placeholder="이메일">
+                                </div>
+                                <div class="input-3">
+                                    <input type="text" placeholder="제목">
+                                </div>
+                                <div class="text-input2">
+                                    <textarea id="input-textarea" placeholder="메세지를 입력하세요."></textarea>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -233,11 +255,14 @@
                     <p>​주소지: 경기도 광명시 하안로 60 SK테크노파크 B-602,603</p>
                 </div>
                 <div class="p2 right-box">
-                    <p>사업자정보: 유한회사 후프후프</p>
-                    <p>사업자등록번호: 476-87-01925</p>
-                    <p>대표자: 훕훕</p>
-                    <p>​주소지: 경기도 광명시 하안로 60 SK테크노파크 B-602,603</p>
+                    <p>Follow us on:</p>
+                    <a href="#"><img src="./img/instagram_icon.webp" alt=""></a>
+                    <p>Contact Us:</p>
+                    <p>070-7722-0250 | admin@hoophoop.co</p>
                 </div>
+            </div>
+            <div class="copyright">
+                <h4>© 2021 by hoophoop</h4>
             </div>
         </footer>
     </div>
