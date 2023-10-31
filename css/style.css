@@ -2,6 +2,62 @@
     width: 100%;
 }
 
+/* 팝업 */
+.popup {
+	display: block;
+	position: fixed;
+	z-index: 999;
+	width: 50rem;
+	height: 20rem;
+	background: rgba(255, 255, 255, .8);
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
+	box-shadow: 0px 0px 5px var(--text1);
+    font-size: 16px;
+}
+
+.popup .textbox {
+	width: 87%;
+	height: 17rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	line-height: 1.75;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+}
+
+.popup .close {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+.popup a {
+	display: block;
+}
+
+a:link,
+a:visited {
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .nav-link {
     color: var(--text3) !important;
 }
@@ -67,7 +123,6 @@
     font-size: 40px;
 }
 
-
 /* 가상선택자 선 */
 
 .textbox .title:after {
@@ -119,59 +174,177 @@ button .btn-secondary {
     background-color: var(--background1);
 }
 
-
-/* 인스타그램 */
-.title-font {
-    margin-left: 20px;
-    color: var(--text2) !important;
+/* 베이글 종류 */
+.bagel-info {
+    width: 100%;
+    height: auto;
+    min-width: 1280px;
+    display: inline-flex;
+    padding: 200px 276px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* background-color: var(--background1); */
 }
 
-.instagram-box {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
+/* 베이글 타이틀 */
+.bagel-info>div:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -40px;
     margin-bottom: 40px;
 }
 
-.insta-content {
-    width: 250px;
+.bagel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 83px;
+}
+
+.bagel-photo-box1 {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+
+.bagel-photo-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+}
+
+.bagel-photo {
+    width: 300px;
     height: 250px;
-    margin: 4px;
-    border: 2px solid green;
+    border: 1px solid blue;
+    border-radius: 25px;
 }
 
-.insta-content:nth-child(1) {
-    background: url(../img/ins_1.png) no-repeat center;
-    background-size: contain;
+.bagel-tag-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
 }
 
-.insta-content:nth-child(2) {
-    background: url(../img/ins_2.png) no-repeat center;
-    background-size: contain;
+.bagel-tag-box div {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: var(--primary)
 }
 
-.insta-content:nth-child(3) {
-    background: url(../img/ins_3.png) no-repeat center;
-    background-size: contain;
+/* 뷰 버튼 */
+.view-btn {
+    display: flex;
+    padding: 20px 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 40px;
+    background: #A86F6F;
+    border: none;
 }
 
-.insta-content:nth-child(4) {
-    background: url(../img/ins_4.png) no-repeat center;
-    background-size: contain;
+.view-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #fff;
 }
 
-.insta-content:nth-child(5) {
-    background: url(../img/ins_5.png) no-repeat center;
-    background-size: contain;
+/* 인스타그램 */
+.insta {
+    width: 100%;
+    height: auto;
+    min-width: 1280px;
+    padding: 100px 250px;
+    border: 1px solid blue;
 }
 
-.insta-content:nth-child(6) {
-    background: url(../img/ins_6.png) no-repeat center;
-    background-size: contain;
+.insta-box {
+    display: inline-flex;
+    padding: 249px 90px 144px 90px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 74px;
 }
+
+.insta-title {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    font-size: 30px;
+}
+
+.insta-photo-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.insta-photo-box2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.inst-frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid blue;
+}
+
+
+.arrow-tag>div:nth-child(1) {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.arrow-tag img,svg{margin-top: 15px;}
+
+
+.arrow-tag {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.arrow-tag a {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow-tag a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.arrow-tag a:hover::after {
+    width: 100%;
+}
+
+
+/* 가맹지점 공통 */
 
 .fr-box {
     width: 1400px;
@@ -183,7 +356,6 @@ button .btn-secondary {
     margin-bottom: 40px;
 }
 
-/* 가맹지점 공통 */
 .fr-content {
     width: 400px;
     height: 500px;
