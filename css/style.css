@@ -4,58 +4,58 @@
 
 /* 팝업 */
 .popup {
-	display: block;
-	position: fixed;
-	z-index: 999;
-	width: 50rem;
-	height: 20rem;
-	background: rgba(255, 255, 255, .8);
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
-	border-radius: 10px;
-	backdrop-filter: blur(20px);
-	box-shadow: 0px 0px 5px var(--text1);
+    display: block;
+    position: fixed;
+    z-index: 999;
+    width: 50rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, .8);
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 5px var(--text1);
     font-size: 16px;
 }
 
 .popup .textbox {
-	width: 87%;
-	height: 17rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	line-height: 1.75;
+    width: 87%;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 1.75;
 }
 
 img {
-	border: 0;
-	vertical-align: top;
+    border: 0;
+    vertical-align: top;
 }
 
 .popup .close {
-	position: absolute;
-	top: 2rem;
-	right: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 .popup a {
-	display: block;
+    display: block;
 }
 
 a:link,
 a:visited {
-	color: #333;
+    color: #333;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .nav-link {
@@ -175,25 +175,34 @@ button .btn-secondary {
 }
 
 /* 베이글 종류 */
+
 .bagel-info {
     width: 100%;
     height: auto;
     min-width: 1280px;
-    display: inline-flex;
-    padding: 200px 276px;
+    display: flex;
+    padding: 100px 276px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     /* background-color: var(--background1); */
 }
 
+@media (max-width: 376px) {
+    .bagel-info {
+      flex-direction: column;
+    }
+  }
+
+
 /* 베이글 타이틀 */
 .bagel-info>div:nth-child(1) {
     font-size: 30px;
     font-weight: bold;
-    margin-top: -40px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
+
 
 .bagel-box {
     display: flex;
@@ -208,6 +217,11 @@ button .btn-secondary {
     gap: 55px;
 }
 
+@media (max-width: 376px) {
+    .bagel-photo-box1 {
+      flex-direction: column;
+    }
+  }
 
 .bagel-photo-box2 {
     display: flex;
@@ -216,10 +230,10 @@ button .btn-secondary {
     gap: 33px;
 }
 
-.bagel-photo {
+.bagel-photo img {
     width: 300px;
     height: 250px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 25px;
 }
 
@@ -238,18 +252,57 @@ button .btn-secondary {
     align-items: center;
     gap: 10px;
     border-radius: 40px;
-    background: var(--primary)
+    color: var(--background1);
+    background: var(--basic)
 }
+
+.bagel-photo {
+    position: relative;
+    display: inline-block;
+}
+
+/* 호버효과 */
+.bagel-photo img:hover {
+    filter: grayscale(100%)
+}
+
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.bagel-photo:hover .hover-effect {
+    opacity: 1;
+    /* hover시 텍스트를 보이도록 설정 */
+}
+
 
 /* 뷰 버튼 */
 .view-btn {
     display: flex;
-    padding: 20px 60px;
+    padding: 15px 25px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     border-radius: 40px;
-    background: #A86F6F;
+    background: var(--primary);
     border: none;
 }
 
@@ -262,13 +315,18 @@ button .btn-secondary {
     color: #fff;
 }
 
+.view-btn:hover {
+    background-color: var(--secondary);
+    transition: 0.3s ease;
+}
+
 /* 인스타그램 */
 .insta {
     width: 100%;
     height: auto;
     min-width: 1280px;
     padding: 100px 250px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .insta-box {
@@ -281,6 +339,7 @@ button .btn-secondary {
 }
 
 .insta-title {
+    margin-left: 125px;
     display: flex;
     padding: 10px;
     justify-content: flex-start;
@@ -293,6 +352,11 @@ button .btn-secondary {
     align-items: center;
     gap: 40px;
 }
+@media (max-width: 376px) {
+    .insta-photo-box1 {
+      flex-direction: column;
+    }
+  }
 
 .insta-photo-box2 {
     display: flex;
@@ -304,7 +368,11 @@ button .btn-secondary {
     width: 300px;
     height: 300px;
     border-radius: 15px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.inst-frame img {
+    border-radius: 15px;
 }
 
 
@@ -313,7 +381,10 @@ button .btn-secondary {
     font-weight: bold;
 }
 
-.arrow-tag img,svg{margin-top: 15px;}
+.arrow-tag img,
+svg {
+    margin-top: 15px;
+}
 
 
 .arrow-tag {
@@ -391,7 +462,7 @@ button .btn-secondary {
 }
 
 .tell-us {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .tell-us>h1 {
@@ -410,37 +481,58 @@ h1 span {
     height: auto;
 }
 
-.text-input {
+/* 인풋박스 */
+
+.form-container {
+    width: 320px;
+    height: 400px;
+    margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
 }
 
-form {
-    width: 380px;
-    height: auto;
+.text-input {
+    width: 302px;
+    height: 220px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+f.custom-form {
+    margin-top: 20px;
+    width: 302px;
+    height: 220px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
-.input-1 input,
-.input-2 input,
-.input-3 input {
-    width: 360px;
-    height: 40px;
-    border: none;
-}
-
-input::placeholder {
+.form-input,
+.form-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 16px;
 }
 
-
-textarea {
-    width: 360px;
-    height: 185px;
+.input-tag {
+    width: 100%;
+    height: 40px;
 }
 
-textarea::placeholder {
+.form-button {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--basic);
+    color: white;
+    border: none;
+    cursor: pointer;
     font-size: 16px;
 }
 

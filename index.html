@@ -189,7 +189,16 @@
                     <div class="bagel-box">
                         <div class="bagel-photo-box1">
                             <div class="bagel-photo-box2">
-                                <div class="bagel-photo"></div>
+                                <div class="bagel-photo">
+                                    <img src="./img/bagel_tag_img1.png" alt="">
+                                    <!-- 사진호버시 들어가는 효과 -->
+                                    <div class="hover-effect">
+                                        <div class="overlay-text">
+                                            <p>CLASSIC BAGEL</p>
+                                            <p>유기농밀가루, 물, 설탕, 소금, 효모 다섯가지 기본재료와 시간이 더하는 숙성의 맛으로 완성되는 베이글</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="bagel-tag-box">
                                     <div>기본의</div>
                                     <div>담백한</div>
@@ -197,23 +206,42 @@
                                 </div>
                             </div>
                             <div class="bagel-photo-box2">
-                                <div class="bagel-photo"></div>
+                                <div class="bagel-photo">
+                                    <img src="./img/bagel_tag_img2.png" alt="">
+                                    <div class="hover-effect">
+                                        <div class="overlay-text">
+                                            <p>STUFFED BAGEL</p>
+                                            <p>크림치즈, 잼, 버터 그 어떤 것을 더할 필요없이 베이글 하나만으로도 충분히 맛있게 먹을 수 있습니다.베이글과 다양한 재료의
+                                                베리에이션을 만나세요</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="bagel-tag-box">
-                                    <div>태그</div>
-                                    <div>태그</div>
-                                    <div>태그</div>
+                                    <div>짭잘한</div>
+                                    <div>달콤한</div>
+                                    <div>다양한</div>
                                 </div>
                             </div>
                             <div class="bagel-photo-box2">
-                                <div class="bagel-photo"></div>
+                                <div class="bagel-photo">
+                                    <img src="./img/bagel_tag_img3.png" alt="">
+                                    <div class="hover-effect">
+                                        <div class="overlay-text">
+                                            <p>SEASON BAGEL</p>
+                                            <p>봄, 여름, 가을, 겨울 계절의 맛을 담은​ 스페셜베이글. 다채로운 재료로 더 건강하고 더 맛있게 ​베이글도 당신의 마음도 채워드릴게요.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="bagel-tag-box">
-                                    <div>태그</div>
-                                    <div>태그</div>
-                                    <div>태그</div>
+                                    <div>계절</div>
+                                    <div>한정판</div>
+                                    <div>특별한</div>
                                 </div>
                             </div>
                         </div>
-                        <button class="view-btn"><a href="#">View more</a></button>
+                        <button class="view-btn">
+                            <a href="#">View more</a>
+                        </button>
                     </div>
             </section>
             <!-- 인스타 레이아웃 -->
@@ -223,14 +251,14 @@
                         <div class="insta-title">Instagram</div>
                         <div class="insta-photo-box1">
                             <div class="insta-photo-box2">
-                                <div class="inst-frame"></div>
-                                <div class="inst-frame"></div>
-                                <div class="inst-frame"></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_1.png" alt=""></a></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_2.png" alt=""></a></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_3.png" alt=""></a></div>
                             </div>
                             <div class="insta-photo-box2">
-                                <div class="inst-frame"></div>
-                                <div class="inst-frame"></div>
-                                <div class="inst-frame"></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_4.png" alt=""></a></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_5.png" alt=""></a></div>
+                                <div class="inst-frame"><a href=""><img src="./img/ins_6.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
@@ -274,47 +302,40 @@
                     </div>
                     <!-- 인풋태그 -->
                     <div class="adress-box">
-                        <div class="text-input">
-                            <form action="#" method="post" class="form">
-                                <div class="input-1">
-                                    <input type="text" placeholder="이름">
-                                </div>
-                                <div class="input-2">
-                                    <input type="text" placeholder="이메일">
-                                </div>
-                                <div class="input-3">
-                                    <input type="text" placeholder="제목">
-                                </div>
-                                <div class="text-input2">
-                                    <textarea id="input-textarea" placeholder="메세지를 입력하세요."></textarea>
-                                </div>
+                        <div class="form-container">
+                            <form class="custom-form">
+                                <input type="text" class="form-input input-tag" placeholder="제목">
+                                <input type="email" class="form-input input-tag" placeholder="이메일">
+                                <textarea class="form-textarea" placeholder="메시지 쓰기"></textarea>
+                                <button type="submit" class="form-button">전송</button>
                             </form>
                         </div>
-
                     </div>
+
                 </div>
             </div>
-            <!--  //가맹지점 -->
-        </main>
-        <footer>
-            <div class="df footer-box">
-                <div class="p2 left-box">
-                    <p>사업자정보: 유한회사 후프후프</p>
-                    <p>사업자등록번호: 476-87-01925</p>
-                    <p>대표자: 훕훕</p>
-                    <p>​주소지: 경기도 광명시 하안로 60 SK테크노파크 B-602,603</p>
-                </div>
-                <div class="p2 right-box">
-                    <p>Follow us on:</p>
-                    <a href="#"><img src="./img/instagram_icon.webp" alt=""></a>
-                    <p>Contact Us:</p>
-                    <p>070-7722-0250 | admin@hoophoop.co</p>
-                </div>
+    </div>
+    <!--  //가맹지점 -->
+    </main>
+    <footer>
+        <div class="df footer-box">
+            <div class="p2 left-box">
+                <p>사업자정보: 유한회사 후프후프</p>
+                <p>사업자등록번호: 476-87-01925</p>
+                <p>대표자: 훕훕</p>
+                <p>​주소지: 경기도 광명시 하안로 60 SK테크노파크 B-602,603</p>
             </div>
-            <div class="copyright">
-                <h4>© 2021 by hoophoop</h4>
+            <div class="p2 right-box">
+                <p>Follow us on:</p>
+                <a href="#"><img src="./img/instagram_icon.webp" alt=""></a>
+                <p>Contact Us:</p>
+                <p>070-7722-0250 | admin@hoophoop.co</p>
             </div>
-        </footer>
+        </div>
+        <div class="copyright">
+            <h4>© 2021 by hoophoop</h4>
+        </div>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
