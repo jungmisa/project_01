@@ -2,7 +2,9 @@
     width: 100%;
 }
 
-section{overflow: hidden;}
+section {
+    overflow: hidden;
+}
 
 /* 팝업 */
 .popup {
@@ -582,4 +584,23 @@ footer .copyright {
 .insta-icon>img {
     width: 30px;
     height: 30px;
+}
+
+/* 상위로 가는 탑버튼 */
+.top_btn a {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 80px;
+    bottom: 48px;
+    color:var(--text2);
+    background-color: var(--secondary);
+    border-radius: 50px;
+    border: 10px solid var(--secondary);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
 }
