@@ -335,6 +335,7 @@ button .btn-secondary {
     transition: all .6s ease-in-out;
 }
 
+/* 인스타그램 호버시 애니메이션 */
 .insta-introduce>img:hover {
     transform: rotate(90deg);
     padding: 1rem;
@@ -343,13 +344,13 @@ button .btn-secondary {
 }
 
 .insta-content {
-    width: 200px;
+    width: 220px;
     height: auto;
 }
 
 .insta-photo img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 15px;
 }
 
@@ -401,6 +402,7 @@ button .btn-secondary {
     flex-wrap: wrap;
     margin: auto;
     margin-bottom: 40px;
+    padding: 80px 100px;
 }
 
 .fr-content {
@@ -427,6 +429,15 @@ button .btn-secondary {
     color: var(--primary);
     font-size: 16px;
     line-height: 20px;
+}
+
+/* 호버시 스팟이 커짐 */
+.adress2 a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.adress2 a:hover img {
+    transform: scale(1.1);
 }
 
 .fr-content:nth-child(2) {
@@ -476,7 +487,6 @@ h1 span {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
 }
 
 f.custom-form {
@@ -514,34 +524,53 @@ f.custom-form {
 
 /* 푸터 */
 footer {
-    padding: 10px 20px;
-    background-color: var(--secondary);
+    width: 100%;
+    height: auto;
 }
 
-.footer-box {
+.footer-section {
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: var(--secondary);
     /* border: 1px solid blue; */
 }
 
-.left-box,
-.right-box {
+.footer-content {
+    width: 400px;
+    height: 100px;
+    font-weight: bold;
+    /* border: 1px solid blue; */
+}
+
+.left-box {
     color: var(--text1);
     width: 362px;
-    height: auto;
     /* border: 1px solid blue; */
+}
+
+footer .copyright {
+    line-height: 50px;
+    text-align: center;
+}
+
+.circle img {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 .right-box {
     text-align: end;
 }
 
-footer .copyright {
-    text-align: center;
-}
-
-.copyright {
-    flex-direction: row;
+.insta-icon>img {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
 }
