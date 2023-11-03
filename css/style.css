@@ -2,6 +2,8 @@
     width: 100%;
 }
 
+section{overflow: hidden;}
+
 /* 팝업 */
 .popup {
     display: none;
@@ -184,10 +186,9 @@ button .btn-secondary {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px;
-    padding: 80px 100px;
+    padding: 80px 0px;
     margin: auto;
     margin-bottom: 40px;
-    /* border: 1px solid blue; */
 }
 
 .bagel-content {
@@ -252,7 +253,7 @@ button .btn-secondary {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -311,6 +312,7 @@ button .btn-secondary {
     flex-wrap: wrap;
     gap: 20px;
     padding: 100px 80px;
+    overflow: hidden;
     /* border: 1px solid blue; */
 }
 
@@ -319,18 +321,19 @@ button .btn-secondary {
     height: 100px;
     display: flex;
     margin: auto;
-    /* border: 1px solid blue; */
 }
 
 .insta-introduce>p {
-    padding: 20px;
+    margin-left: 10px;
+    line-height: 90px;
     font-size: 40px;
 }
 
 .insta-introduce>img {
-    width: 100px;
+    width: 90px;
+    height: 90px;
     background-color: #fff;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 100%;
     transition: all .6s ease-in-out;
 }
@@ -351,7 +354,7 @@ button .btn-secondary {
 .insta-photo img {
     width: 220px;
     height: 220px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .insta-photo {
@@ -373,7 +376,7 @@ button .btn-secondary {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -431,9 +434,16 @@ button .btn-secondary {
     line-height: 20px;
 }
 
+.adress2 a {
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
 /* 호버시 스팟이 커짐 */
 .adress2 a img {
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
 }
 
 .adress2 a:hover img {
@@ -542,7 +552,7 @@ footer {
 
 .footer-content {
     width: 400px;
-    height: 100px;
+    height: 120px;
     font-weight: bold;
     /* border: 1px solid blue; */
 }
@@ -570,7 +580,6 @@ footer .copyright {
 }
 
 .insta-icon>img {
-    margin-top: 20px;
     width: 30px;
     height: 30px;
 }
