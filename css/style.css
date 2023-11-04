@@ -6,7 +6,7 @@ section{overflow: hidden;}
 
 /* 팝업 */
 .popup {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 999;
     width: 50rem;
