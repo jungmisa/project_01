@@ -330,7 +330,7 @@ button .btn-secondary {
     font-size: 40px;
 }
 
-.insta-introduce>img {
+.insta-introduce>a img {
     width: 90px;
     height: 90px;
     background-color: #fff;
@@ -341,7 +341,7 @@ button .btn-secondary {
 
 
 /* 인스타그램 호버시 애니메이션 */
-.insta-introduce>img:hover {
+.insta-introduce>a img:hover {
     transform: rotate(90deg);
     padding: 1rem;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -393,7 +393,6 @@ button .btn-secondary {
 
 .insta-photo:hover .hover-effect {
     opacity: 1;
-    /* hover시 텍스트를 보이도록 설정 */
 }
 
 
